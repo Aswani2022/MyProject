@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="travels_management_vehicle_views_form" model="ir.ui.view">
+        <field name="name">travels.management.vehicle.form</field>
+        <field name="model">travels.management.vehicle</field>
+        <field name="arch" type="xml">
+                <form string="Test">
+                    <sheet><group><group>
+                <field name="registration_no" class="oe_inline" placeholder="e.g. KL10 AB1234"/>
+                <field name="vehicle_type"/>
+                    </group><group>
+                <field name="name"/>
+                <field name="facilities_ids" widget="many2many_tags" /></group></group>
+                <notebook>
+                <page string="Vehicle Charges">
+                    <field name="service_ids">
+                    <tree string="service">
+                <field name="service"/>
+                <field name="quantity"/>
+                <field name="unit"/>
+                <field name="amount"/>
+                    </tree></field>
+                </page></notebook>
+
+                    </sheet></form></field></record>
+
+<record id="travels_management_vehicle_views_calendar" model="ir.ui.view">
+    <field name="name">travels.management.vehicle.calendar</field>
+    <field name="model">travels.management.vehicle</field>
+    <field name="arch" type="xml">
+    <calendar string="Vehicle"
+            date_start="date_request"
+              date_stop="return_date"
+              event_open_popup="true"
+               mode="month"
+              color="name"
+              quick_add="False">
+        <field name="name"/>
+
+         </calendar>
+        </field>
+        </record>
+
+
+
+    <record id="travels_management_vehicle_action"
+            model="ir.actions.act_window">
+    <field name="name">Vehicle</field>
+    <field name="res_model">travels.management.vehicle</field>
+    <field name="view_mode">tree,form,search,calendar</field>
+</record>
+
+</odoo>

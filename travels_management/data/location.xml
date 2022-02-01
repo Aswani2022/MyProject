@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <record id="data_location1" model="travels.management.location">
+        <field name="name">Calicut</field></record>
+    <record id="data_location2" model="travels.management.location">
+        <field name="name">Kasargod</field></record>
+    <record id="data_location3" model="travels.management.location">
+        <field name="name">Cochin</field></record>
+    <record id="data_location4" model="travels.management.location">
+        <field name="name">Kannur</field></record>
+    <record id="data_location5" model="travels.management.location">
+        <field name="name">Palakkad</field></record>
+    <record id="data_location6" model="travels.management.location">
+        <field name="name">Malappuram</field></record>
+    <record id="data_location7" model="travels.management.location">
+        <field name="name">Kollam</field></record>
+    <record id="data_location8" model="travels.management.location">
+        <field name="name">Wayanad</field></record>
+    <record id="data_location9" model="travels.management.location">
+        <field name="name">Mysore</field></record>
+    <record id="data_location10" model="travels.management.location">
+        <field name="name">Mumbai</field></record>
+
+</odoo>

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <record id="data_tour_packages" model="travels.management.service.types">
+        <field name="name">tour packages</field>
+        <field name="expiration_period">10</field>
+    </record>
+</odoo>

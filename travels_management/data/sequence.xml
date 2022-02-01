@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="sequence_booking" model="ir.sequence">
+   <field name="name">Booking </field>
+   <field name="code">booking</field>
+   <field name="active">TRUE</field>
+   <field name="prefix">BR</field>
+   <field name="padding">6</field>
+   <field name="number_next">1</field>
+   <field name="number_increment">1</field>
+</record>
+
+<!--   <record id="register_vehicle" model="ir.sequence">-->
+<!--   <field name="name">Vehicle </field>-->
+<!--   <field name="code">vehicle</field>-->
+<!--   <field name="active">TRUE</field>-->
+<!--   <field name="prefix">KL</field>-->
+<!--   <field name="padding">10</field>-->
+<!--   <field name="number_next">1</field>-->
+<!--   <field name="number_increment">1</field>-->
+<!--</record>-->
+
+
+</odoo>

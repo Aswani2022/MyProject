@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="travels_management_menu_root" name="Travels Management">
+    <menuitem id="travels_management_booking_menu" name="Booking">
+        <menuitem id="travels_management_booking_menu_action"
+                  action="travels_management_booking_action"/>
+         </menuitem>
+
+        <menuitem id="travels_management_configuration_menu"
+                  name="Configuration">
+        <menuitem id="travels_management_service_types_menu_action"
+                  name="Service Types"
+                  action="travels_management_service_types_action"/>
+         </menuitem>
+     </menuitem>
+    <menuitem id="travels_management_vehicle_menu_action" name="Vehicle"
+               parent="travels_management.travels_management_configuration_menu"
+              action="travels_management_vehicle_action"/>
+    <menuitem id="tour_package_menu_action" name="Tour Package"
+               parent="travels_management.travels_management_configuration_menu"
+              action="tour_package_action"/>
+
+</odoo>

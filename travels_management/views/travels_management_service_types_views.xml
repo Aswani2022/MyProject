@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="travels_management_service_types_views_form" model="ir.ui.view">
+        <field name="name">travels.management.service.types.form</field>
+        <field name="model">travels.management.service.types</field>
+        <field name="arch" type="xml">
+                <form string="Test">
+                        <group>
+                <field name="name"/>
+            <field name="expiration_period"/>
+                        </group>
+
+                </form></field></record>
+
+    <record id="travels_management_service_types_action"
+            model="ir.actions.act_window">
+    <field name="name">Service Types</field>
+    <field name="res_model">travels.management.service.types</field>
+    <field name="view_mode">tree,form,search</field>
+</record>
+
+</odoo>
